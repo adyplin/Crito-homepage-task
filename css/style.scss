@@ -1400,6 +1400,11 @@ footer {
         color: #F0EFE9;
         gap: 10px;
 
+        a {
+            text-decoration: none;
+
+        }
+
         @media(min-width: 992px) {
             display: grid;
             grid-template-columns: 300px auto auto auto auto;
@@ -1429,6 +1434,10 @@ footer {
             font-size: 14px;
             color:#9a9898;
             list-style: none;
+
+            &:hover {
+                color:#FFFFFF;
+            }
 
         }
 

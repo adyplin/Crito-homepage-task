@@ -421,6 +421,9 @@ footer .container .content-box {
     gap: 10px;
   }
 }
+footer .container .content-box a {
+  text-decoration: none;
+}
 footer .container .content-box ul {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
@@ -444,6 +447,9 @@ footer .container .content-box li {
   font-size: 14px;
   color: #9a9898;
   list-style: none;
+}
+footer .container .content-box li:hover {
+  color: #FFFFFF;
 }
 @media (min-width: 768px) {
   footer .container .content-box li {

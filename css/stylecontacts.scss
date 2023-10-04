@@ -470,6 +470,11 @@ footer {
             gap: 10px;
 
             }
+
+            a {
+                text-decoration: none;
+    
+            }
             
             ul {
                 font-family: 'DM Sans',sans-serif;
@@ -495,6 +500,10 @@ footer {
                 font-size: 14px;
                 color:#9a9898;
                 list-style: none;
+
+                &:hover {
+                    color:#FFFFFF;
+                }
 
                 @media(min-width: 768px) {
                 margin-top: 20px;
