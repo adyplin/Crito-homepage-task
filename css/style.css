@@ -1293,6 +1293,8 @@ footer .container .crito p {
 @media (min-width: 992px) {
   footer .container .crito p {
     display: block;
+    margin-top: 20px;
+    color: #9a9898;
   }
 }
 footer .copyright {
