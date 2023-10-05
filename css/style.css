@@ -351,11 +351,11 @@ header .container .menu .btn-login {
   }
 }
 
-.ads {
+.ads .container {
   display: none;
 }
 @media (min-width: 768px) {
-  .ads {
+  .ads .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -365,7 +365,7 @@ header .container .menu .btn-login {
   }
 }
 @media (min-width: 900px) {
-  .ads {
+  .ads .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -375,7 +375,7 @@ header .container .menu .btn-login {
   }
 }
 @media (min-width: 992px) {
-  .ads {
+  .ads .container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -385,7 +385,7 @@ header .container .menu .btn-login {
   }
 }
 @media (min-width: 1200px) {
-  .ads {
+  .ads .container {
     display: flex;
     justify-content: center;
     gap: 120px;
@@ -428,13 +428,10 @@ header .container .menu .btn-login {
   flex-wrap: wrap;
   width: 70%;
   height: 50%;
-  margin-left: 100px;
+  margin-left: 30px;
   align-content: center;
   padding-bottom: 0;
   padding-top: 50px;
-}
-.features .container .section-title h2 {
-  font-size: 35px;
 }
 @media (min-width: 992px) {
   .features .container .section-title {
@@ -474,10 +471,26 @@ header .container .menu .btn-login {
     border-radius: 25px;
   }
 }
+.features .container .section-title h2 {
+  font-size: 25px;
+}
+@media (min-width: 567px) {
+  .features .container .section-title h2 {
+    font-size: 35px;
+  }
+}
 .features .container .advices {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-evenly;
+  grid-template-columns: 1fr;
+  margin-left: 100px;
+}
+@media (min-width: 567px) {
+  .features .container .advices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
 }
 .features .container .advices h4 {
   margin: 20px 0 20px 0;
@@ -609,8 +622,15 @@ header .container .menu .btn-login {
 }
 .about-company .container .center-content {
   display: flex;
-  margin-top: 70px;
-  margin-right: 100px;
+  flex-direction: column;
+}
+@media (min-width: 567px) {
+  .about-company .container .center-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-right: 100px;
+  }
 }
 @media (min-width: 768px) {
   .about-company .container .center-content {
@@ -629,7 +649,15 @@ header .container .menu .btn-login {
   display: flex;
   align-items: center;
   margin-right: -120px;
-  margin-left: 68px;
+  margin-left: -120px;
+  margin-top: 30px;
+}
+@media (min-width: 567px) {
+  .about-company .container .center-content .intro {
+    margin-right: -120px;
+    margin-left: 68px;
+    margin-top: 0;
+  }
 }
 .about-company .container .center-content .intro:hover {
   color: #9a9898;
@@ -759,9 +787,6 @@ header .container .menu .btn-login {
   width: 40%;
 }
 
-.choose-us {
-  display: flex;
-}
 @media (min-width: 1200px) {
   .choose-us {
     display: grid;
@@ -977,15 +1002,15 @@ header .container .menu .btn-login {
 }
 .team-members .container .images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 80px;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 576px) {
   .team-members .container .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    padding-left: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1038,8 +1063,15 @@ header .container .menu .btn-login {
 }
 .team-members .content-box .employees {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+@media (min-width: 576px) {
+  .team-members .content-box .employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
 }
 @media (min-width: 1200px) {
   .team-members .content-box .employees {
@@ -1221,19 +1253,36 @@ header .container .menu .btn-login {
 }
 .newsletter .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .newsletter .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .newsletter .container h2 {
   font-family: "DM Sans", sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 700;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .newsletter .container h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 992px) {
   .newsletter .container h2 {
     font-family: "DM Sans", sans-serif;
     font-size: 45px;
     font-weight: 700;
+    margin-bottom: 0;
   }
 }
 .newsletter .container form input {
