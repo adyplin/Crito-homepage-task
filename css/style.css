@@ -403,16 +403,6 @@ header .container .menu .btn-login {
     margin: 50px;
   }
 }
-@media (min-width: 992px) {
-  .features h2 {
-    font-size: 20px;
-  }
-}
-@media (min-width: 1400px) {
-  .features h2 {
-    font-size: 45px;
-  }
-}
 .features .container {
   margin-bottom: 50px;
 }
@@ -440,7 +430,7 @@ header .container .menu .btn-login {
     margin-left: 30px;
   }
   .features .container .section-title h2 {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 @media (min-width: 1400px) {
@@ -457,8 +447,8 @@ header .container .menu .btn-login {
 @media (min-width: 1200px) {
   .features .container .section-title a {
     padding: 15px 50px;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
     border-radius: 25px;
     margin-top: 25px;
   }
@@ -795,10 +785,13 @@ header .container .menu .btn-login {
 }
 .choose-us .container {
   width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1200px) {
   .choose-us .container {
-    padding-left: 180px;
     width: 100%;
   }
 }
@@ -874,7 +867,7 @@ header .container .menu .btn-login {
     position: absolute;
     z-index: 1;
     bottom: 100px;
-    left: -70px;
+    left: 20px;
   }
 }
 .choose-us .content-box .grey-box {
@@ -884,7 +877,7 @@ header .container .menu .btn-login {
   .choose-us .content-box .grey-box {
     display: block;
     position: absolute;
-    width: 120%;
+    width: 110%;
     height: 425px;
     z-index: 0;
     background-color: #F0EFE9;

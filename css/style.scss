@@ -433,29 +433,29 @@ header {
     margin: 50px;
     }
 
-    @media(min-width: 992px) {
+    // @media(min-width: 992px) {
         
-        h2 {
-            font-size: 20px;
-        }
-    }
+    //     h2 {
+    //         font-size: 20px;
+    //     }
+    // }
 
-    @media(min-width: 1400px) {
+    // @media(min-width: 1400px) {
     
-        h2 {
-            font-size: 45px;
-        }
-    }
+    //     h2 {
+    //         font-size: 45px;
+    //     }
+    // }
 
     .container {
         margin-bottom: 50px;
- 
         
         @media(min-width:1200px) {
             display: flex;
             margin-top: 50px;
             margin-bottom: 100px;
         }
+        
 
         .section-title {
             display: flex;
@@ -468,13 +468,12 @@ header {
             padding-top: 50px;
 
             @media(min-width: 992px) {
-
                 margin-top: -30px;
                 margin-right: 100px;
                 margin-left: 30px;
 
                 h2 {
-                    font-size: 35px;
+                    font-size: 25px;
                 }
             }
 
@@ -485,17 +484,17 @@ header {
             padding-top: 75px;
             margin-left: 10px;
 
-            h2 {
-                font-size: 45px;
-            }
+                h2 {
+                    font-size: 45px;
+                }
 
             }
 
             a {
                 @media(min-width: 1200px) {
                     padding: 15px 50px;
-                    font-weight: 600;
                     font-size: 16px;
+                    font-weight: 600;
                     border-radius: 25px;
                     margin-top: 25px;
                 }
@@ -868,10 +867,12 @@ header {
 
     .container {
         width: 450px;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         @media(min-width: 1200px) {
-            padding-left: 180px;
             width: 100%;
         }
         
@@ -928,6 +929,7 @@ header {
     }
     .content-box {
         position: relative;
+        
 
         .image {
             display: none;
@@ -951,7 +953,7 @@ header {
                 position: absolute;
                 z-index: 1;
                 bottom: 100px;
-                left: -70px;  
+                left: 20px;  
             }
         }
         .grey-box {
@@ -960,7 +962,7 @@ header {
             @media(min-width: 1400px) {
                 display: block;
                 position: absolute;
-                width: 120%;
+                width: 110%;
                 height: 425px;
                 z-index: 0;
                 background-color: #F0EFE9;
