@@ -352,12 +352,7 @@ header .container .menu .btn-login {
 }
 
 .ads {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: none;
 }
 @media (min-width: 768px) {
   .ads {
@@ -400,8 +395,13 @@ header .container .menu .btn-login {
 }
 
 .features {
-  border: 1px solid #DAD9D3;
-  margin: 50px;
+  border: none;
+}
+@media (min-width: 992px) {
+  .features {
+    border: 1px solid #DAD9D3;
+    margin: 50px;
+  }
 }
 @media (min-width: 992px) {
   .features h2 {
@@ -760,17 +760,26 @@ header .container .menu .btn-login {
 }
 
 .choose-us {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 170px;
+  display: flex;
+}
+@media (min-width: 1200px) {
+  .choose-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .choose-us .container {
   width: 450px;
-  margin-right: 265px;
+}
+@media (min-width: 1200px) {
+  .choose-us .container {
+    padding-left: 180px;
+    width: 100%;
+  }
 }
 .choose-us .container .section-title {
+  width: 400px;
   padding-top: 60px;
-  margin-left: -30px;
 }
 @media (min-width: 768px) {
   .choose-us .container .section-title {
@@ -783,7 +792,15 @@ header .container .menu .btn-login {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-left: 50px;
+  margin-left: 80px;
+}
+@media (min-width: 1200px) {
+  .choose-us .container .examples {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 50px;
+  }
 }
 .choose-us .container .examples h4 {
   font-family: "DM Sans", sans-serif;
@@ -918,6 +935,46 @@ header .container .menu .btn-login {
   margin: auto;
   padding: 2rem;
 }
+.team-members .container .headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .team-members .container .headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -70px;
+  }
+}
+.team-members .container .headline .btn-browse {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .team-members .container .headline .btn-browse {
+    margin-bottom: -70px;
+    margin-top: 0;
+  }
+}
+.team-members .container .headline .section-title {
+  text-align: center;
+  margin-bottom: -30px;
+}
+@media (min-width: 768px) {
+  .team-members .container .headline .section-title {
+    text-align: left;
+    margin-bottom: -80px;
+  }
+}
+@media (min-width: 992px) {
+  .team-members .container .headline .section-title {
+    margin-bottom: 0;
+  }
+}
 .team-members .container .images {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -947,31 +1004,6 @@ header .container .menu .btn-login {
 }
 .team-members .container .images h4 {
   margin-top: 30px;
-}
-.team-members .container .btn-browse {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 100px;
-  border: 1px solid #191919;
-}
-@media (min-width: 576px) {
-  .team-members .container .btn-browse {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 150px;
-    border: 1px solid #191919;
-  }
-}
-@media (min-width: 1200px) {
-  .team-members .container .btn-browse {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 260px;
-    margin-top: 150px;
-  }
 }
 .team-members .container .dots {
   display: flex;
@@ -1239,62 +1271,89 @@ footer .foot-element {
   }
 }
 footer .container {
+  display: flex;
+}
+footer .container .content-box {
   height: 435px;
   display: grid;
-  grid-template-columns: 200px auto auto auto auto;
-  align-content: center;
+  grid-template-columns: auto auto;
+  align-content: right;
   color: #F0EFE9;
-  gap: 10px;
-}
-footer .container a {
-  text-decoration: none;
+  gap: 30px;
+  margin: 20px 0 20px 40px;
+  width: 100%;
 }
 @media (min-width: 992px) {
-  footer .container {
+  footer .container .content-box {
+    height: 435px;
     display: grid;
-    grid-template-columns: 300px auto auto auto auto;
-    gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    color: #F0EFE9;
+    gap: 10px;
   }
 }
-@media (min-width: 1400px) {
-  footer .container {
-    gap: 100px;
-  }
+footer .container .content-box a {
+  text-decoration: none;
 }
-footer .container ul {
+footer .container .content-box ul {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   margin-left: -30px;
 }
-footer .container li {
-  margin-top: 20px;
+@media (min-width: 768px) {
+  footer .container .content-box ul {
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-left: -30px;
+  }
+}
+footer .container .content-box li {
+  margin-top: 5px;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: #9a9898;
   list-style: none;
 }
-footer .container li:hover {
+footer .container .content-box li:hover {
   color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  footer .container .content-box li {
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #9a9898;
+    list-style: none;
+  }
 }
 footer .container .crito {
   margin-top: 30px;
 }
 footer .container .crito .logo {
-  position: absolute;
-  top: 0;
-  margin-top: 85px;
+  display: none;
+}
+@media (min-width: 768px) {
+  footer .container .crito .logo {
+    display: flex;
+    margin-top: 80px;
+  }
 }
 footer .container .crito p {
   display: none;
 }
 @media (min-width: 992px) {
   footer .container .crito p {
-    display: block;
-    margin-top: 20px;
+    display: flex;
     color: #9a9898;
+    width: 300px;
+    margin-top: 30px;
   }
 }
 footer .copyright {
@@ -1306,14 +1365,27 @@ footer .copyright {
   border-top: 1px solid #666666;
 }
 footer .copyright span {
-  margin-left: 80px;
+  margin-left: 0;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  footer .copyright span {
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 footer .copyright .social-media {
-  margin-right: 80px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  display: none;
+}
+@media (min-width: 768px) {
+  footer .copyright .social-media {
+    display: flex;
+    margin-right: 80px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 footer .copyright .social-media a {
   color: #9a9898;
