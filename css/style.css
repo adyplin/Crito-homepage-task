@@ -931,7 +931,7 @@ header .container .menu .btn-login {
   text-align: right;
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   text-decoration: none;
   color: #191919;
 }
@@ -1183,13 +1183,13 @@ header .container .menu .btn-login {
 .article-and-news .container .content .business h6 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
-  font-weight: 900px;
+  font-weight: 900;
 }
 .article-and-news .container .content .business p {
   margin-top: 20px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 2;
 }
 .article-and-news .container .content .business .yellow-box {
@@ -1209,14 +1209,14 @@ header .container .menu .btn-login {
   margin-top: 20px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 .article-and-news .container .content .business .yellow-box h5 {
   position: absolute;
   margin-bottom: 15px;
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
-  font-weight: 900px;
+  font-weight: 900;
 }
 .article-and-news .container .dots {
   display: flex;

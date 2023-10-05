@@ -578,7 +578,6 @@ header {
                     width: 300px;
                     margin-right: 30px;
                     margin-left: 30px;
-                    
                 }
             }                
         }
@@ -591,8 +590,6 @@ header {
     .container {
         padding: 100px 0 100px 0px;
         
-        
-
         @media(min-width: 1200px) {
             display: flex;
             justify-content: space-between;
@@ -637,12 +634,10 @@ header {
                 font-weight: 700;
                 font-size: 22px;
             }
-
             p {
                 font-family: 'Inter', sans-serif;
                 font-size: 16px;
             }
-
         }
         .content-box {
             text-align: center;
@@ -676,8 +671,7 @@ header {
 
             p {
                 font-size: 18px;
-            }
-            
+            } 
         }
 
         .center-content {
@@ -739,10 +733,8 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-right: 10px; 
-                
-            }
-            
+                margin-right: 10px;     
+            }     
         }
     }
 }
@@ -1024,7 +1016,7 @@ header {
                     text-align: right;
                     font-family: 'Inter', sans-serif;
                     font-size: 14px;
-                    font-weight: 500px;
+                    font-weight: 500;
                     text-decoration: none;
                     color:#191919;
 
@@ -1063,8 +1055,7 @@ header {
     }
 
     .container {
-        // width: fit-content;
-        // padding: 0;
+        
 
         .headline {
             display: flex;
@@ -1302,14 +1293,14 @@ header {
                 h6 {
                     font-family: 'DM Sans', sans-serif;
                     font-size: 22px;
-                    font-weight: 900px;
+                    font-weight: 900;
                 }
 
                 p {
                     margin-top: 20px;
                     font-family: 'Inter', sans-serif;
                     font-size: 16px;
-                    font-weight: 500px;
+                    font-weight: 500;
                     line-height: 2;
                 }
 
@@ -1331,7 +1322,7 @@ header {
                         margin-top: 20px;
                         font-family: 'Inter', sans-serif;
                         font-size: 16px;
-                        font-weight: 500px;
+                        font-weight: 500;
                         
                     }
                     h5 {
@@ -1339,7 +1330,7 @@ header {
                         margin-bottom: 15px;
                         font-family: 'DM Sans', sans-serif;
                         font-size: 22px;
-                        font-weight: 900px;
+                        font-weight: 900;
                     }
                 }
             }
@@ -1456,7 +1447,7 @@ footer {
             bottom: 0;
             right: 0;
             margin-bottom: 70px;  
-            }
+        }
     }
     
     .container {
@@ -1517,18 +1508,16 @@ footer {
                     color:#FFFFFF;
                 }
 
-                @media(min-width: 768px) {
-                margin-top: 20px;
-                font-family: 'Inter', sans-serif;
-                font-weight: 300;
-                font-size: 14px;
-                color:#9a9898;
-                list-style: none;
 
+                @media(min-width: 768px) {
+                    margin-top: 20px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color:#9a9898;
+                    list-style: none;
                 }
-        
-            }
-        
+            } 
         }
         .crito {
             margin-top: 30px;
@@ -1540,8 +1529,7 @@ footer {
                     display: flex;
                     margin-top: 80px;
 
-                }
-                
+                } 
             }
 
             p {
@@ -1576,7 +1564,6 @@ footer {
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
-    
         }
     
         .social-media {

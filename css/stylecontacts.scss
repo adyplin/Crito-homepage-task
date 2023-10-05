@@ -28,15 +28,12 @@ html, body {
     
     i {
         font-size: 1em;
-    
-
     }
 
     &:hover {
         background-color: #FFFFFF;
         border: 1px solid #191919;
-        color: #191919;
-        
+        color: #191919;    
     }
 }
 
@@ -248,7 +245,6 @@ header {
     }
 }
 
-
 .contact-info {
     margin-top: 120px;
     margin-bottom: 100px;
@@ -320,7 +316,6 @@ header {
                     top: 40px;
                     left: 30px;
                 }
-
             }
 
 
@@ -337,10 +332,8 @@ header {
                 font-weight: 600;
                 line-height: 2em;
             }
-
         }
     }
-
 }
 
 .contact-us {  
@@ -436,13 +429,13 @@ footer {
     .foot-element {
         display: none;
     
-            @media(min-width: 1200px) {
+        @media(min-width: 1200px) {
             display: block;
             position: absolute;
             bottom: 0;
             right: 0;
             margin-bottom: 70px;  
-            }
+        }
     }
     
     .container {
@@ -460,13 +453,12 @@ footer {
             width: 100%;
 
             @media(min-width: 992px) {    
-            height: 435px;
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            align-content: center;
-            color: #F0EFE9;
-            gap: 10px;
-
+                height: 435px;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                align-content: center;
+                color: #F0EFE9;
+                gap: 10px;
             }
 
             a {
@@ -504,13 +496,12 @@ footer {
                 }
 
                 @media(min-width: 768px) {
-                margin-top: 20px;
-                font-family: 'Inter', sans-serif;
-                font-weight: 300;
-                font-size: 14px;
-                color:#9a9898;
-                list-style: none;
-
+                    margin-top: 20px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color:#9a9898;
+                    list-style: none;
                 }
         
             }
@@ -521,7 +512,6 @@ footer {
 
             .logo {
                 display: none;
-                // margin-top: 80px;
 
                 @media(min-width: 768px) {
                     display: flex;
@@ -563,7 +553,6 @@ footer {
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
-    
         }
     
         .social-media {
