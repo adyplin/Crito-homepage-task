@@ -1003,14 +1003,14 @@ header .container .menu .btn-login {
 .team-members .container .images {
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
+  margin-left: 60px;
 }
 @media (min-width: 576px) {
   .team-members .container .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-left: 0;
   }
 }
 @media (min-width: 1200px) {
